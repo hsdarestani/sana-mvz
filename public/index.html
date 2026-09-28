@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08243a">
+<meta name="description" content="Karriere im Sana MVZ Orthopädie und Chirurgie Frankfurt. MFA gesucht. Einfach online bewerben.">
+<title>Karriere im Sana MVZ Frankfurt</title>
+<style>
+:root{
+  --ink:#08243a;
+  --ink2:#123f5e;
+  --blue:#0b7db9;
+  --cyan:#73d2ef;
+  --ice:#edf8fc;
+  --paper:#f8fbfd;
+  --white:#fff;
+  --gold:#d3b36c;
+  --muted:#667f91;
+  --line:#dceaf1;
+  --shadow:0 22px 58px rgba(5,32,52,.14);
+  --soft:0 12px 30px rgba(5,32,52,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 10% 3%,rgba(115,210,239,.20),transparent 29%),
+    radial-gradient(circle at 91% 14%,rgba(211,179,108,.13),transparent 26%),
+    linear-gradient(160deg,#fbfdfe,#eef7fb 52%,#fbfcfd);
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.28;
+  background-image:
+    linear-gradient(rgba(8,36,58,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(8,36,58,.025) 1px,transparent 1px);
+  background-size:30px 30px;
+  mask-image:linear-gradient(to bottom,black,transparent 72%);
+}
+.shell{width:min(100%,820px);margin:0 auto;padding:16px 13px calc(36px + env(safe-area-inset-bottom))}
+.hero{
+  position:relative;
+  overflow:hidden;
+  min-height:660px;
+  border-radius:40px;
+  color:#fff;
+  box-shadow:var(--shadow);
+  isolation:isolate;
+  background:#071b2a;
+}
+.hero img.bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  z-index:-3;
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background:
+    linear-gradient(180deg,rgba(4,19,31,.18),rgba(4,19,31,.34) 36%,rgba(4,19,31,.90) 82%,rgba(4,19,31,.98)),
+    linear-gradient(120deg,rgba(7,70,108,.44),transparent 52%);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  width:370px;
+  height:370px;
+  right:-170px;
+  bottom:-210px;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 0 0 46px rgba(255,255,255,.025),0 0 0 92px rgba(255,255,255,.018);
+  z-index:-1;
+}
+.heroTop{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:22px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.brandLogo{
+  width:48px;
+  height:48px;
+  border-radius:15px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(145deg,#0b5f94,#0e81c3);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 10px 24px rgba(0,0,0,.22);
+}
+.brandLogo img{width:38px;height:38px;object-fit:contain;display:block}
+.city{
+  padding:8px 11px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);
+  color:rgba(255,255,255,.78);
+  font-size:10px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.heroCopy{
+  position:absolute;
+  left:24px;
+  right:24px;
+  bottom:24px;
+  max-width:650px;
+}
+.eyebrow{
+  font-size:11px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:#a8e5fb;
+  font-weight:850;
+  margin-bottom:8px;
+}
+h1{
+  margin:0 0 12px;
+  font-size:clamp(44px,9vw,74px);
+  line-height:.92;
+  letter-spacing:-.06em;
+  max-width:620px;
+}
+.heroText{
+  margin:0;
+  max-width:590px;
+  color:rgba(255,255,255,.81);
+  font-size:15px;
+  line-height:1.58;
+}
+.heroCtas{display:flex;flex-wrap:wrap;gap:10px;margin-top:19px}
+.cta{
+  min-height:50px;
+  padding:0 18px;
+  border-radius:17px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:820;
+  border:1px solid rgba(255,255,255,.18);
+}
+.cta.primary{background:#fff;color:var(--ink);border-color:#fff}
+.cta.secondary{background:rgba(255,255,255,.10);color:#fff;backdrop-filter:blur(12px)}
+.quickFacts{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.quickFacts span{
+  padding:8px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.12);
+  color:rgba(255,255,255,.86);
+  font-size:10px;
+  font-weight:700;
+}
+.sectionTitle{text-align:center;padding:30px 8px 14px}
+.sectionTitle h2{margin:0;font-size:27px;letter-spacing:-.035em}
+.sectionTitle p{margin:8px auto 0;max-width:610px;color:var(--muted);font-size:13px;line-height:1.62}
+.benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
+.benefit{
+  padding:19px;
+  border-radius:25px;
+  background:rgba(255,255,255,.91);
+  border:1px solid rgba(8,36,58,.07);
+  box-shadow:var(--soft);
+}
+.benefitIcon{
+  width:45px;
+  height:45px;
+  border-radius:15px;
+  display:grid;
+  place-items:center;
+  margin-bottom:12px;
+  background:#eaf7fc;
+  color:#0b79b6;
+  font-size:20px;
+  font-weight:850;
+}
+.benefit strong{display:block;font-size:15px;margin-bottom:5px}
+.benefit p{margin:0;color:#6b8191;font-size:12px;line-height:1.52}
+.gallery{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  grid-template-rows:170px 170px;
+  gap:10px;
+}
+.gallery figure{
+  margin:0;
+  position:relative;
+  overflow:hidden;
+  border-radius:26px;
+  box-shadow:var(--soft);
+  background:#dcebf2;
+}
+.gallery figure.big{grid-row:1/3}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block}
+.gallery figcaption{
+  position:absolute;
+  left:10px;
+  bottom:10px;
+  padding:7px 10px;
+  border-radius:999px;
+  color:#fff;
+  background:rgba(5,28,45,.68);
+  backdrop-filter:blur(10px);
+  font-size:9px;
+  letter-spacing:.05em;
+}
+.pitch{
+  margin-top:12px;
+  padding:22px;
+  border-radius:30px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 88% 4%,rgba(115,210,239,.18),transparent 24%),
+    linear-gradient(145deg,#071725,#0c3554);
+  box-shadow:var(--shadow);
+}
+.pitch strong{display:block;font-size:23px;letter-spacing:-.035em;margin-bottom:7px}
+.pitch p{margin:0;color:rgba(255,255,255,.73);font-size:13px;line-height:1.6}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.step{
+  padding:17px;
+  border-radius:22px;
+  background:rgba(255,255,255,.9);
+  border:1px solid rgba(8,36,58,.07);
+  box-shadow:0 8px 22px rgba(5,32,52,.07);
+}
+.stepNo{font-size:10px;color:#0b79b6;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
+.step strong{display:block;margin-top:6px;font-size:14px}
+.step p{margin:5px 0 0;color:#708493;font-size:11px;line-height:1.45}
+.formCard{
+  margin-top:12px;
+  padding:22px;
+  border-radius:32px;
+  background:rgba(255,255,255,.94);
+  border:1px solid rgba(8,36,58,.07);
+  box-shadow:var(--shadow);
+}
+.formHead{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:17px}
+.formHead h3{margin:0;font-size:24px;letter-spacing:-.035em}
+.formHead p{margin:6px 0 0;color:#708493;font-size:12px;line-height:1.5}
+.formBadge{
+  white-space:nowrap;
+  padding:8px 10px;
+  border-radius:999px;
+  background:#eaf7fc;
+  color:#0b79b6;
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.field{display:grid;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{
+  font-size:10px;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:#7a8e9d;
+  font-weight:850;
+}
+.field input,.field textarea{
+  width:100%;
+  border:1px solid #d7e6ee;
+  background:#f9fcfd;
+  color:var(--ink);
+  border-radius:15px;
+  padding:13px 14px;
+  font:inherit;
+  font-size:13px;
+  outline:none;
+}
+.field input:focus,.field textarea:focus{
+  border-color:#70c6e8;
+  box-shadow:0 0 0 3px rgba(112,198,232,.13);
+}
+.field textarea{min-height:86px;resize:vertical}
+.choiceLabel{
+  font-size:10px;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:#7a8e9d;
+  font-weight:850;
+  margin-bottom:7px;
+}
+.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.choice input{position:absolute;opacity:0;pointer-events:none}
+.choice span{
+  min-height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:9px;
+  border-radius:14px;
+  border:1px solid #d7e6ee;
+  background:#fff;
+  color:#5f7587;
+  font-size:12px;
+  font-weight:750;
+  cursor:pointer;
+}
+.choice input:checked + span{
+  background:#eaf7fc;
+  border-color:#77c9e8;
+  color:#0a6ea5;
+  box-shadow:0 0 0 2px rgba(119,201,232,.10);
+}
+.upload{
+  position:relative;
+  min-height:115px;
+  border:1.5px dashed #bcd4e0;
+  border-radius:18px;
+  background:#f7fbfd;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:18px;
+  cursor:pointer;
+}
+.upload input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.upload strong{display:block;font-size:13px}
+.upload span{display:block;margin-top:4px;color:#7b8f9d;font-size:10px;line-height:1.4}
+.fileName{
+  margin-top:8px;
+  min-height:18px;
+  color:#0a6ea5;
+  font-size:11px;
+  font-weight:700;
+}
+.consent{
+  display:flex;
+  gap:9px;
+  align-items:flex-start;
+  margin-top:14px;
+  color:#718594;
+  font-size:10px;
+  line-height:1.5;
+}
+.consent input{margin-top:2px}
+.submit{
+  width:100%;
+  min-height:56px;
+  margin-top:14px;
+  border:0;
+  border-radius:17px;
+  color:#fff;
+  background:linear-gradient(110deg,#0b4f7f,#0c85c9 58%,#57c9ee);
+  font-size:14px;
+  font-weight:850;
+  cursor:pointer;
+  box-shadow:0 12px 24px rgba(11,103,157,.22);
+}
+.submit[disabled]{opacity:.6;cursor:not-allowed}
+.status{
+  display:none;
+  margin-top:12px;
+  padding:12px 14px;
+  border-radius:14px;
+  font-size:11px;
+  line-height:1.5;
+}
+.status.show{display:block}
+.status.ok{background:#eaf8f1;color:#246d4c}
+.status.err{background:#fff0f0;color:#9b4343}
+.note{
+  text-align:center;
+  color:#8396a4;
+  font-size:9px;
+  line-height:1.55;
+  margin-top:12px;
+}
+footer{text-align:center;color:#8ca0ae;font-size:10px;line-height:1.6;padding:24px 8px 4px}
+@media(max-width:620px){
+  .hero{min-height:650px}
+  .heroTop{padding:18px}
+  .heroCopy{left:18px;right:18px;bottom:18px}
+  h1{font-size:47px}
+  .benefits{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .choices{grid-template-columns:1fr 1fr 1fr}
+  .gallery{grid-template-rows:140px 140px}
+  .formHead{display:block}
+  .formBadge{display:inline-flex;margin-top:10px}
+}
+@media(max-width:420px){
+  .shell{padding-left:10px;padding-right:10px}
+  .hero{min-height:620px}
+  h1{font-size:43px}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:230px 125px}
+  .gallery figure.big{grid-column:1/-1;grid-row:auto}
+  .choices{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+<section class="hero">
+<img class="bg" src="https://www.sana.de/karriere/fileadmin/default/Wismar/231115_Sana_Offenbach_GP86_Master_JPG_02.jpg" alt="Mitarbeiterinnen in der Sana Arbeitswelt">
+<div class="heroTop">
+<div class="brand">
+<span class="brandLogo"><img src="/assets/sana-logo.png" alt="Sana Logo"></span>
+<span>Sana MVZ Frankfurt</span>
+</div>
+<span class="city">Frankfurt am Main</span>
+</div>
+<div class="heroCopy">
+<div class="eyebrow">MFA gesucht</div>
+<h1>Dein Platz im Team.</h1>
+<p class="heroText">Du willst moderne Medizin, klare Abläufe und ein Team, in dem Zusammenarbeit zählt? Dann möchten wir dich kennenlernen. Der erste Kontakt dauert nur wenige Minuten.</p>
+<div class="heroCtas">
+<a class="cta primary" href="#bewerbung">Jetzt einfach bewerben</a>
+<a class="cta secondary" href="#vorteile">Vorteile ansehen</a>
+</div>
+<div class="quickFacts">
+<span>Vollzeit oder Teilzeit</span>
+<span>Lebenslauf optional</span>
+<span>Schnelle Bewerbung</span>
+</div>
+</div>
+</section>
+
+<section class="sectionTitle" id="vorteile">
+<h2>Was dich bei Sana erwartet</h2>
+<p>Attraktive Rahmenbedingungen, Entwicklung und moderne Arbeitsplätze in einem großen Gesundheitsverbund.</p>
+</section>
+
+<section class="benefits">
+<div class="benefit">
+<div class="benefitIcon">€</div>
+<strong>Attraktive Vergütung</strong>
+<p>Verlässliche Rahmenbedingungen und eine attraktive Vergütung im Sana Umfeld.</p>
+</div>
+<div class="benefit">
+<div class="benefitIcon">↗</div>
+<strong>Fort und Weiterbildung</strong>
+<p>Strukturierte Lernangebote und Entwicklungsmöglichkeiten für deinen nächsten Schritt.</p>
+</div>
+<div class="benefit">
+<div class="benefitIcon">◷</div>
+<strong>Flexible Arbeitsmodelle</strong>
+<p>Vollzeit und Teilzeit mit planbaren Strukturen für Beruf und Privatleben.</p>
+</div>
+<div class="benefit">
+<div class="benefitIcon">♡</div>
+<strong>Modernes Arbeitsumfeld</strong>
+<p>Digitale Abläufe, moderne Praxisstrukturen und Zusammenarbeit auf Augenhöhe.</p>
+</div>
+</section>
+
+<section class="sectionTitle">
+<h2>So kann Arbeitsalltag aussehen</h2>
+<p>Einblicke aus der offiziellen Sana Arbeitswelt. Die Bilder zeigen Sana Teams und stehen für die moderne Arbeitskultur im Verbund.</p>
+</section>
+
+<section class="gallery">
+<figure class="big">
+<img src="https://www.sana.de/karriere/fileadmin/default/_processed_/e/1/csm_78_-_078-IR7_3680-copyright-by-rack-fotografie-_7885638db5.jpg" alt="Sana Team im Arbeitsalltag">
+<figcaption>Sana Arbeitswelt</figcaption>
+</figure>
+<figure>
+<img src="https://www.sana.de/karriere/fileadmin/default/Wismar/231115_Sana_Offenbach_GP85_r_Master_JPG.jpeg" alt="MFA bei Sana">
+<figcaption>Moderne Abläufe</figcaption>
+</figure>
+<figure>
+<img src="https://www.sana.de/karriere/fileadmin/default/Wismar/231115_Sana_Offenbach_GP58_Master_JPG.jpeg" alt="Mitarbeiterinnen bei Sana">
+<figcaption>Team und Austausch</figcaption>
+</figure>
+</section>
+
+<section class="pitch">
+<strong>Keine komplizierte Bewerbung.</strong>
+<p>Name, Kontakt und Arbeitszeit reichen für den ersten Schritt. Du kannst deinen Lebenslauf direkt hochladen, musst aber kein Anschreiben verfassen.</p>
+</section>
+
+<section class="sectionTitle">
+<h2>In drei einfachen Schritten</h2>
+<p>Wenig Aufwand für dich. Persönliche Rückmeldung von uns.</p>
+</section>
+
+<section class="steps">
+<div class="step"><div class="stepNo">Schritt 1</div><strong>Kontakt eintragen</strong><p>Name und Telefonnummer reichen als Basis.</p></div>
+<div class="step"><div class="stepNo">Schritt 2</div><strong>Lebenslauf hochladen</strong><p>Optional als PDF, DOC oder DOCX mit maximal 5 MB.</p></div>
+<div class="step"><div class="stepNo">Schritt 3</div><strong>Rückmeldung erhalten</strong><p>Wir prüfen deine Angaben und melden uns persönlich.</p></div>
+</section>
+
+<section class="sectionTitle" id="bewerbung">
+<h2>Jetzt unkompliziert bewerben</h2>
+<p>Kein Anschreiben. Nur die wichtigsten Angaben.</p>
+</section>
+
+<section class="formCard">
+<div class="formHead">
+<div>
+<h3>Kurzbewerbung</h3>
+<p>Das Formular ist bewusst kurz gehalten und funktioniert auch mobil.</p>
+</div>
+<span class="formBadge">Wenige Minuten</span>
+</div>
+
+<form id="applicationForm" enctype="multipart/form-data" novalidate>
+<div class="grid">
+<div class="field">
+<label for="name">Name</label>
+<input id="name" name="name" autocomplete="name" required>
+</div>
+<div class="field">
+<label for="phone">Telefon oder WhatsApp</label>
+<input id="phone" name="phone" autocomplete="tel" inputmode="tel" required>
+</div>
+<div class="field full">
+<label for="email">E Mail optional</label>
+<input id="email" name="email" autocomplete="email" type="email">
+</div>
+<div class="field full">
+<div class="choiceLabel">Gewünschte Arbeitszeit</div>
+<div class="choices">
+<label class="choice"><input type="radio" name="worktime" value="Vollzeit" checked><span>Vollzeit</span></label>
+<label class="choice"><input type="radio" name="worktime" value="Teilzeit"><span>Teilzeit</span></label>
+<label class="choice"><input type="radio" name="worktime" value="Flexibel"><span>Flexibel</span></label>
+</div>
+</div>
+<div class="field full">
+<label for="start">Möglicher Start optional</label>
+<input id="start" name="start" placeholder="Zum Beispiel ab November">
+</div>
+<div class="field full">
+<label>Lebenslauf optional</label>
+<label class="upload">
+<input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+<span><strong>Lebenslauf auswählen</strong><span>PDF, DOC oder DOCX, maximal 5 MB</span></span>
+</label>
+<div class="fileName" id="fileName"></div>
+</div>
+<div class="field full">
+<label for="message">Kurze Nachricht optional</label>
+<textarea id="message" name="message" placeholder="Zum Beispiel Erfahrung, Wunsch oder eine kurze Frage"></textarea>
+</div>
+</div>
+
+<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
+
+<label class="consent">
+<input type="checkbox" id="consent" name="consent" value="yes" required>
+<span>Ich stimme zu, dass meine Angaben zum Zweck der Bewerbung verarbeitet werden. Weitere Informationen zum Datenschutz bietet Sana auf der offiziellen Website.</span>
+</label>
+
+<button class="submit" id="submitButton" type="submit">Bewerbung senden</button>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+</form>
+
+<div class="note">Sana MVZ Orthopädie und Chirurgie Frankfurt · Holzhausenstraße 81 · 60322 Frankfurt am Main</div>
+</section>
+
+<footer>
+Sana MVZ Orthopädie und Chirurgie Frankfurt<br>
+Karriere und Bewerbung
+</footer>
+</main>
+
+<script>
+const form=document.getElementById("applicationForm");
+const cv=document.getElementById("cv");
+const fileName=document.getElementById("fileName");
+const statusBox=document.getElementById("status");
+const submitButton=document.getElementById("submitButton");
+
+cv.addEventListener("change",()=>{
+  const file=cv.files && cv.files[0];
+  if(!file){fileName.textContent="";return;}
+  if(file.size>5*1024*1024){
+    fileName.textContent="Die Datei ist größer als 5 MB.";
+    cv.value="";
+    return;
+  }
+  fileName.textContent=file.name;
+});
+
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  statusBox.className="status";
+  statusBox.textContent="";
+
+  if(!form.checkValidity()){
+    form.reportValidity();
+    return;
+  }
+
+  const file=cv.files && cv.files[0];
+  if(file && file.size>5*1024*1024){
+    statusBox.textContent="Bitte wähle eine Datei mit maximal 5 MB.";
+    statusBox.className="status show err";
+    return;
+  }
+
+  submitButton.disabled=true;
+  submitButton.textContent="Wird gesendet";
+
+  try{
+    const response=await fetch("/api/apply",{method:"POST",body:new FormData(form)});
+    const data=await response.json().catch(()=>({}));
+    if(!response.ok) throw new Error(data.message || "Die Bewerbung konnte nicht gesendet werden.");
+
+    statusBox.textContent="Danke. Deine Bewerbung wurde gesendet. Wir melden uns persönlich bei dir.";
+    statusBox.className="status show ok";
+    form.reset();
+    fileName.textContent="";
+    statusBox.scrollIntoView({behavior:"smooth",block:"nearest"});
+  }catch(err){
+    statusBox.textContent=err.message || "Die Bewerbung konnte nicht gesendet werden. Bitte versuche es später erneut.";
+    statusBox.className="status show err";
+  }finally{
+    submitButton.disabled=false;
+    submitButton.textContent="Bewerbung senden";
+  }
+});
+</script>
+</body>
+</html>
