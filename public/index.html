@@ -580,6 +580,67 @@ h1{
 .catcherCopy small{display:block;color:#a9eaff;font-size:9px;letter-spacing:.1em;text-transform:uppercase;font-weight:850}
 .catcherCopy strong{display:block;margin-top:5px;font-size:17px;line-height:1.25;letter-spacing:-.02em}
 .catcher a{position:relative;z-index:1;min-height:44px;padding:0 13px;border-radius:13px;background:#fff;color:var(--ink);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:10px;font-weight:900;white-space:nowrap}
+.benefitZone,.teamZone,.processZone,.applyZone{position:relative;isolation:isolate}
+.benefitZone:before,.teamZone:before,.processZone:before,.applyZone:before{content:"";position:absolute;z-index:-1;pointer-events:none;border-radius:44px;inset:18px -8px -18px;opacity:.9}
+.benefitZone:before{background:
+  radial-gradient(circle at 90% 8%,rgba(102,210,247,.22),transparent 28%),
+  radial-gradient(circle at 4% 72%,rgba(18,112,165,.09),transparent 34%),
+  linear-gradient(145deg,rgba(238,249,253,.75),rgba(255,255,255,.20))}
+.teamZone:before{background:
+  radial-gradient(circle at 8% 20%,rgba(255,214,150,.14),transparent 26%),
+  radial-gradient(circle at 90% 62%,rgba(89,202,239,.14),transparent 30%),
+  linear-gradient(160deg,rgba(255,255,255,.18),rgba(232,246,252,.58))}
+.processZone:before{background:
+  radial-gradient(circle at 86% 16%,rgba(104,216,249,.16),transparent 27%),
+  linear-gradient(145deg,rgba(241,250,253,.82),rgba(255,255,255,.16))}
+.applyZone:before{background:
+  radial-gradient(circle at 14% 8%,rgba(99,210,247,.18),transparent 27%),
+  radial-gradient(circle at 90% 88%,rgba(13,101,151,.10),transparent 30%),
+  linear-gradient(145deg,rgba(235,248,253,.78),rgba(255,255,255,.2))}
+.benefit:after{content:"";position:absolute;width:150px;height:150px;right:-82px;top:-78px;border-radius:50%;background:radial-gradient(circle,rgba(80,198,239,.20),rgba(80,198,239,0) 68%);transition:transform .4s ease}
+.benefit.growth{background:linear-gradient(145deg,#ffffff,#eef9fd)}
+.benefit.flexibility{background:linear-gradient(145deg,#ffffff,#f2f8ff)}
+.benefit.culture{background:
+  radial-gradient(circle at 88% 8%,rgba(237,203,144,.17),transparent 30%),
+  linear-gradient(145deg,#fff,#f3fafc)}
+@media(hover:hover){.benefit:hover:after{transform:scale(1.22) translate(-8px,8px)}}
+.priorityPanel{margin-top:12px;padding:18px;border-radius:28px;background:
+  radial-gradient(circle at 96% 0%,rgba(102,214,249,.22),transparent 32%),
+  linear-gradient(145deg,#071f33,#0b466b 68%,#0e6f9d);color:#fff;box-shadow:var(--shadow);overflow:hidden;position:relative}
+.priorityPanel:after{content:"";position:absolute;width:220px;height:220px;right:-120px;bottom:-140px;border-radius:50%;border:1px solid rgba(255,255,255,.13);box-shadow:0 0 0 34px rgba(255,255,255,.025)}
+.priorityIntro{position:relative;z-index:1}
+.priorityIntro span{display:block;color:#9ee7ff;font-size:9px;font-weight:850;letter-spacing:.11em;text-transform:uppercase}
+.priorityIntro strong{display:block;margin-top:5px;font-size:20px;letter-spacing:-.03em}
+.priorityChoices{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.priorityChoice{appearance:none;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.08);color:rgba(255,255,255,.76);padding:10px 12px;border-radius:999px;font:inherit;font-size:10px;font-weight:820;cursor:pointer;transition:.25s ease}
+.priorityChoice.active{background:#fff;color:var(--ink);border-color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.16);transform:translateY(-1px)}
+.priorityResult{position:relative;z-index:1;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;margin-top:14px;padding:14px;border-radius:18px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.11);backdrop-filter:blur(12px)}
+.priorityPulse{width:14px;height:14px;border-radius:50%;background:#7ce0ff;box-shadow:0 0 0 0 rgba(124,224,255,.55);animation:priorityPulse 2.6s ease-out infinite}
+@keyframes priorityPulse{0%{box-shadow:0 0 0 0 rgba(124,224,255,.50)}65%,100%{box-shadow:0 0 0 12px rgba(124,224,255,0)}}
+.priorityResult strong{display:block;font-size:13px}
+.priorityResult p{margin:4px 0 0;color:rgba(255,255,255,.67);font-size:10px;line-height:1.45}
+.priorityResult.swap{animation:prioritySwap .3s ease}
+@keyframes prioritySwap{0%{opacity:.35;transform:translateY(5px)}100%{opacity:1;transform:none}}
+.steps{position:relative}
+.step:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#72d7f4,#0d78b8);opacity:.8}
+.step:nth-child(2):before{background:linear-gradient(180deg,#94e5f7,#5a9fe0)}
+.step:nth-child(3):before{background:linear-gradient(180deg,#91d9ff,#65bfae)}
+.step:nth-child(1){background:linear-gradient(145deg,#fff,#eefaff)}
+.step:nth-child(2){background:linear-gradient(145deg,#fff,#f1f6ff)}
+.step:nth-child(3){background:linear-gradient(145deg,#fff,#effaf6)}
+.formShell{background:linear-gradient(120deg,#65d2f1,#ffffff,#0d79b6,#a6ebff);background-size:260% 260%;animation:formBorder 9s ease infinite}
+@keyframes formBorder{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.formCard{background:
+  radial-gradient(circle at 95% 0%,rgba(104,215,248,.12),transparent 25%),
+  linear-gradient(155deg,rgba(255,255,255,.98),rgba(243,250,253,.97))}
+.upload{transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease,background .25s ease}
+.upload:hover{border-color:#6bc8e8;box-shadow:0 10px 30px rgba(9,111,162,.09)}
+.upload.hasFile{border-style:solid;border-color:#5cc7a1;background:linear-gradient(145deg,#f3fff9,#eefaff);box-shadow:0 10px 28px rgba(54,158,120,.10)}
+.upload.hasFile .uploadIcon{background:#dff7ed;color:#217a59}
+.uploadHint{margin-top:8px!important;color:#0b79b6!important;font-weight:800!important}
+.mobileBar{overflow:hidden}
+.mobileBar:after{content:"";position:absolute;top:-80%;left:-30%;width:26%;height:260%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent);transform:rotate(18deg);animation:mobileShine 6s ease-in-out infinite;pointer-events:none}
+@keyframes mobileShine{0%,65%{left:-30%;opacity:0}72%{opacity:1}90%{left:125%;opacity:0}100%{left:125%;opacity:0}}
 footer{text-align:center;color:#8c9fac;font-size:10px;line-height:1.6;padding:26px 8px 4px}
 @media(max-width:760px){
   .shell{padding-left:10px;padding-right:10px}
@@ -597,7 +658,13 @@ footer{text-align:center;color:#8c9fac;font-size:10px;line-height:1.6;padding:26
   .benefit.pay{min-height:250px}
   .gallery{grid-template-rows:170px 170px}
   .statement{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:8px;padding-left:8px}
+  .steps:before{content:"";position:absolute;left:27px;top:24px;bottom:24px;width:2px;background:linear-gradient(#71d7f3,#4ea4d1,#67bfae);opacity:.35}
+  .step{min-height:0;padding:15px 15px 15px 68px;border-radius:21px}
+  .step:before{display:none}
+  .stepNo{position:absolute;left:13px;top:15px;z-index:1;width:30px;height:30px;border-radius:10px;box-shadow:0 0 0 6px rgba(242,250,253,.95)}
+  .step strong{margin-top:0;font-size:14px}
+  .step p{margin-top:4px}
   .formTop{display:block}
   .formBadge{display:inline-flex;margin-top:10px}
 }
@@ -610,6 +677,11 @@ footer{text-align:center;color:#8c9fac;font-size:10px;line-height:1.6;padding:26
 @media(max-width:520px){
   .topBrandText span{display:none}
   .topApply{padding:0 12px}
+  .section{padding-top:26px}
+  .sectionHead{margin-bottom:11px}
+  .sectionHead h2{font-size:27px}
+  .sectionHead p{font-size:12px}
+  .benefitZone:before,.teamZone:before,.processZone:before,.applyZone:before{inset:10px -2px -10px;border-radius:30px}
   .hero,.heroInner{min-height:650px}
   .heroTop{align-items:flex-start}
   .heroBrand>span:last-child{display:none}
@@ -623,8 +695,15 @@ footer{text-align:center;color:#8c9fac;font-size:10px;line-height:1.6;padding:26
       "growth"
       "flexibility"
       "culture";
+    gap:9px;
   }
-  .benefit.pay{min-height:230px}
+  .benefit{min-height:0;padding:17px 17px 17px 76px;border-radius:23px}
+  .benefit.pay{min-height:190px;padding:19px}
+  .benefit:not(.pay) .benefitNumber{position:absolute;right:16px;top:15px}
+  .benefit:not(.pay) .benefitIcon{position:absolute;left:16px;top:17px;margin:0;width:45px;height:45px}
+  .benefit:not(.pay) strong{margin-top:0;font-size:17px}
+  .benefit:not(.pay) p{margin-top:5px}
+  .benefit.culture{min-height:0}
   .gallery{grid-template-columns:1fr 1fr;grid-template-rows:235px 130px}
   .gallery figure.big{grid-column:1/-1;grid-row:auto}
   .grid{grid-template-columns:1fr}
@@ -721,7 +800,7 @@ footer{text-align:center;color:#8c9fac;font-size:10px;line-height:1.6;padding:26
   </div>
 </div>
 
-<section class="section reveal" id="vorteile">
+<section class="section reveal benefitZone" id="vorteile">
   <div class="sectionHead">
     <div class="sectionHeadText">
       <span class="eyeline">Warum Sana MVZ</span>
@@ -760,9 +839,26 @@ footer{text-align:center;color:#8c9fac;font-size:10px;line-height:1.6;padding:26
       <p>Digitale Abläufe, klare Kommunikation, moderne Praxisstrukturen und Zusammenarbeit auf Augenhöhe.</p>
     </article>
   </div>
+
+  <div class="priorityPanel reveal">
+    <div class="priorityIntro">
+      <span>Was ist dir wichtig?</span>
+      <strong>Tippe auf das, was für dich zählt.</strong>
+    </div>
+    <div class="priorityChoices" role="tablist" aria-label="Vorteile auswählen">
+      <button class="priorityChoice active" type="button" data-title="Gute Bedingungen" data-text="Attraktive Vergütung und verlässliche Rahmenbedingungen in einem starken Gesundheitsverbund.">Vergütung</button>
+      <button class="priorityChoice" type="button" data-title="Weiterkommen" data-text="Lernangebote und Entwicklungsmöglichkeiten unterstützen deinen nächsten beruflichen Schritt.">Entwicklung</button>
+      <button class="priorityChoice" type="button" data-title="Planbarer Alltag" data-text="Vollzeit und Teilzeit mit Strukturen, die Beruf und Privatleben besser planbar machen.">Arbeitszeit</button>
+      <button class="priorityChoice" type="button" data-title="Gern zusammenarbeiten" data-text="Moderne Praxisstrukturen, klare Kommunikation und Zusammenarbeit auf Augenhöhe.">Team</button>
+    </div>
+    <div class="priorityResult" id="priorityResult">
+      <span class="priorityPulse"></span>
+      <div><strong id="priorityTitle">Gute Bedingungen</strong><p id="priorityText">Attraktive Vergütung und verlässliche Rahmenbedingungen in einem starken Gesundheitsverbund.</p></div>
+    </div>
+  </div>
 </section>
 
-<section class="section reveal">
+<section class="section reveal teamZone">
   <div class="sectionHead">
     <div class="sectionHeadText">
       <span class="eyeline">Sana Arbeitswelt</span>
@@ -809,7 +905,7 @@ footer{text-align:center;color:#8c9fac;font-size:10px;line-height:1.6;padding:26
   </div>
 </section>
 
-<section class="section reveal">
+<section class="section reveal processZone">
   <div class="sectionHead">
     <div class="sectionHeadText">
       <span class="eyeline">So funktioniert es</span>
@@ -825,7 +921,7 @@ footer{text-align:center;color:#8c9fac;font-size:10px;line-height:1.6;padding:26
   </div>
 </section>
 
-<section class="section reveal" id="bewerbung">
+<section class="section reveal applyZone" id="bewerbung">
   <div class="sectionHead">
     <div class="sectionHeadText">
       <span class="eyeline">Jetzt bewerben</span>
@@ -878,7 +974,7 @@ footer{text-align:center;color:#8c9fac;font-size:10px;line-height:1.6;padding:26
               <span>
                 <span class="uploadIcon">↑</span>
                 <strong>Lebenslauf auswählen</strong>
-                <span>PDF, DOC oder DOCX, maximal 5 MB</span>
+                <span>PDF, DOC oder DOCX, maximal 5 MB</span><span class="uploadHint">Antippen und Datei auswählen</span>
               </span>
             </label>
             <div class="fileName" id="fileName"></div>
@@ -955,15 +1051,35 @@ if(!reduceMotion){
   document.querySelectorAll(".reveal,.revealGroup").forEach(el=>el.classList.add("visible"));
 }
 
+const uploadBox=cv.closest(".upload");
+const priorityButtons=[...document.querySelectorAll(".priorityChoice")];
+const priorityResult=document.getElementById("priorityResult");
+const priorityTitle=document.getElementById("priorityTitle");
+const priorityText=document.getElementById("priorityText");
+
+priorityButtons.forEach(button=>{
+  button.addEventListener("click",()=>{
+    priorityButtons.forEach(b=>b.classList.remove("active"));
+    button.classList.add("active");
+    priorityTitle.textContent=button.dataset.title;
+    priorityText.textContent=button.dataset.text;
+    priorityResult.classList.remove("swap");
+    void priorityResult.offsetWidth;
+    priorityResult.classList.add("swap");
+  });
+});
+
 cv.addEventListener("change",()=>{
   const file=cv.files && cv.files[0];
-  if(!file){fileName.textContent="";return;}
+  if(!file){fileName.textContent="";uploadBox.classList.remove("hasFile");return;}
   if(file.size>5*1024*1024){
     fileName.textContent="Die Datei ist größer als 5 MB.";
     cv.value="";
+    uploadBox.classList.remove("hasFile");
     return;
   }
-  fileName.textContent=file.name;
+  fileName.textContent="✓ "+file.name;
+  uploadBox.classList.add("hasFile");
 });
 
 form.addEventListener("submit",async e=>{
@@ -995,6 +1111,7 @@ form.addEventListener("submit",async e=>{
     statusBox.className="status show ok";
     form.reset();
     fileName.textContent="";
+    uploadBox.classList.remove("hasFile");
     statusBox.scrollIntoView({behavior:"smooth",block:"nearest"});
   }catch(err){
     statusBox.textContent=err.message || "Die Bewerbung konnte nicht gesendet werden. Bitte versuche es später erneut.";
